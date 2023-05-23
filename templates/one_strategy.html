@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .stock-table th,
+        .stock-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="grid">
+        <h2>STOCK PORTFOLIO SUGGESTION ENGINE</h2>
+        <center><h4>Portfolio Information:</h4></center>
+        <p>
+            <center><b>Current value of Portfolio: {{ name }}</b></center>
+        </p>
+        <p>
+            <center><b>Selected Investment Strategy/Strategies: {{ strategy }}</b></center>
+        </p>
+        <p>
+            <center><b>Stocks Chosen: {{ stock1 }}, {{ stock2 }}, {{ stock3 }}, {{ stock4 }}</b></center>
+        </p>
+        <table class="stock-table">
+            <tr>
+                <th>Stock</th>
+                <th>Current Value of 1 Share</th>
+                <th>Invested Money</th>
+            </tr>
+            <tr>
+                <td>{{ stock1 }}</td>
+                <td>{{ stock1_price }}</td>
+                <td>{{ stock1_money }}</td>
+            </tr>
+            <tr>
+                <td>{{ stock2 }}</td>
+                <td>{{ stock2_price }}</td>
+                <td>{{ stock2_money }}</td>
+            </tr>
+            <tr>
+                <td>{{ stock3 }}</td>
+                <td>{{ stock3_price }}</td>
+                <td>{{ stock3_money }}</td>
+            </tr>
+            <tr>
+                <td>{{ stock4 }}</td>
+                <td>{{ stock4_price }}</td>
+                <td>{{ stock4_money }}</td>
+            </tr>
+        </table>
+        <center>
+            <img src="{{ url_pie }}" alt="Image not found" class="pie-chart">
+        </center>
+        <br>
+        <center>
+            <img src="{{ url }}" alt="Image not found">
+        </center>
+        <br>
+    </form>
+</body>
+
+</html>

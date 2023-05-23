@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/index.css">
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <table>
+            
+                <tr>
+                    <td>
+                        <h2>STOCK PORTFOLIO SUGGESTION ENGINE</h2>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="section grid">
+                <div class="center-text">
+                    <table>
+                        <tr>
+                            <td>
+                                <center>Current value of Portfolio: {{ name }}</center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+                <div class="center-text grid">
+                    <table>
+                        <tr>
+                            <td>
+                                <center>Selected Investment Strategy/Strategies: {{ strategy2}}  {{ strategy1 }}</center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+                <div class="center-div grid">
+                    <table>
+                        <tr>
+                            <td>
+                                <center>Stocks Chosen:</center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>{{ stock1 }}</li>
+                                    <li>{{ stock2 }}</li>
+                                    <li>{{ stock3 }}</li>
+                                    <li>{{ stock4 }}</li>
+                                    <li>{{ stock5 }}</li>
+                                    <li>{{ stock6 }}</li>
+                                    <li>{{ stock7 }}</li>
+                                    <li>{{ stock8 }}</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+            </div>
+        </div>
+        
+     
+        <form class="grid">
+            <table>
+                <tr>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock1 }} is {{ stock1_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock1 }} is {{ stock1_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock2 }} is {{ stock2_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock2 }} is {{ stock2_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock3 }} is {{ stock3_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock3 }} is {{ stock3_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock4 }} is {{ stock4_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock4 }} is {{ stock4_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock5 }} is {{ stock5_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock5 }} is {{ stock5_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock6 }} is {{ stock6_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock6 }} is {{ stock6_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock7 }} is {{ stock7_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock7 }} is {{ stock7_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="section">
+                            <p>
+                                <center>Current value of 1 share of {{ stock8 }} is {{ stock8_price }}</center>
+                                <br />
+                                <center>Invested money in {{ stock8 }} is {{ stock8_money }}</center>
+                                <br />
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        
+            <div class="section">
+                <center><img src={{ url_pie }} alt="Image not found" /></center>
+                <br />
+                <hr>
+                <center><img src={{ url }} alt="Image not found" /></center>
+                <br />
+            </div>
+        </form>
+         
+        
+    </div>
+</body>
+</html>
